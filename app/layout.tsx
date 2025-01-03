@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Roboto, Playfair_Display } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
+import { ThemeProvider } from '@/components/ThemeProvider'
 import './globals.css'
 
 const roboto = Roboto({
@@ -27,10 +28,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${roboto.variable} ${playfair.variable} font-sans antialiased bg-gradient-to-br from-purple-400 to-pink-500 dark:from-purple-900 dark:to-pink-900 text-gray-900 dark:text-gray-100`}
+        className={`${roboto.variable} ${playfair.variable} font-sans antialiased`}
       >
-        <Navbar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
