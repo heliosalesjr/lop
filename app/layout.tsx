@@ -3,6 +3,7 @@ import { Roboto, Playfair_Display } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import './globals.css'
+import '../styles/background.css'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${roboto.variable} ${playfair.variable} font-sans antialiased`}
+        className={`${roboto.variable} ${playfair.variable} font-sans antialiased animated-background`}
       >
         <ThemeProvider
           attribute="class"

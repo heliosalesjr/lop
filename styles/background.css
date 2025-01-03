@@ -1,0 +1,27 @@
+.animated-background {
+    background-color: hsla(0,100%,50%,1);
+    background-image: 
+    radial-gradient(at 16% 97%, hsla(193,75%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 7% 27%, hsla(176,67%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 10% 33%, hsla(330,91%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 69%, hsla(83,92%,66%,1) 0px, transparent 50%),
+    radial-gradient(at 52% 68%, hsla(51,97%,66%,1) 0px, transparent 50%),
+    radial-gradient(at 54% 79%, hsla(99,94%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 82% 9%, hsla(143,82%,62%,1) 0px, transparent 50%);
+
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
