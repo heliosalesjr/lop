@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card'
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen p-4">
+    <div className="flex flex-col min-h-screen p-4 pt-20">
       <main className="flex-grow flex flex-col justify-center items-center text-center">
         <div className="flex flex-col items-center justify-between h-full max-w-6xl w-full mx-auto">
           <div className="mb-8 flex-grow flex items-center justify-center">
@@ -12,7 +12,7 @@ export default function Home() {
               "If you can't love yourself, how in the hell are you gonna love somebody else?"
             </p>
           </div>
-          <Card className="w-xl max-w-2xl mb-4">
+          <Card className="w-full max-w-lg mb-4">
             <CardContent className="p-6">
               <div className="flex items-center">
                 <div className="flex-grow">
