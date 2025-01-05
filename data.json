@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Alice Johnson",
+        "role": "Software Engineer",
+        "quote": "Code is like humor. When you have to explain it, it’s bad.",
+        "link": "https://example.com/alice",
+        "photo": "https://example.com/photos/alice.jpg"
+    },
+    {
+        "name": "Bob Smith",
+        "role": "Product Manager",
+        "quote": "The best way to predict the future is to invent it.",
+        "link": "https://example.com/bob",
+        "photo": "https://example.com/photos/bob.jpg"
+    },
+    {
+        "name": "Carol White",
+        "role": "UX Designer",
+        "quote": "Design is not just what it looks like and feels like. Design is how it works.",
+        "link": "https://example.com/carol",
+        "photo": "https://example.com/photos/carol.jpg"
+    },
+    {
+        "name": "David Brown",
+        "role": "Data Scientist",
+        "quote": "In God we trust, all others must bring data.",
+        "link": "https://example.com/david",
+        "photo": "https://example.com/photos/david.jpg"
+    },
+    {
+        "name": "Eve Davis",
+        "role": "DevOps Engineer",
+        "quote": "Automation is good, so long as you know exactly where to put the machine.",
+        "link": "https://example.com/eve",
+        "photo": "https://example.com/photos/eve.jpg"
+    }
+]
