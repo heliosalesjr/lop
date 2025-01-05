@@ -13,9 +13,11 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-2xl font-bold text-gray-900 dark:text-white">
-                Legacy of Pride
-              </Link>
+                <Link href="/" className="text-2xl font-bold text-gray-900 dark:text-white">
+                <span className="text-blue-600">Legacy</span>
+                <span className="text-pink-500">of</span>
+                <span className="text-orange-500">Pride</span>
+                </Link>
             </div>
             <div className="flex items-center space-x-4">
               <Button variant="ghost" asChild>
