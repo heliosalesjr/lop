@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -71,7 +71,49 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground min-h-screen;
+    @apply bg-background text-foreground;
+  }
+}
+
+.animated-background {
+  background-color: hsla(0, 100%, 50%, 1);
+  background-image: 
+    radial-gradient(at 16% 97%, hsla(0, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 7% 27%, hsla(60, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 33%, hsla(120, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 69%, hsla(180, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 68%, hsla(240, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 54% 79%, hsla(300, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 82% 9%, hsla(360, 100%, 50%, 1) 0px, transparent 50%);
+
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.dark .animated-background {
+  background-color: hsla(0, 100%, 20%, 1);
+  background-image: 
+    radial-gradient(at 16% 97%, hsla(0, 100%, 20%, 1) 0px, transparent 50%),
+    radial-gradient(at 7% 27%, hsla(60, 100%, 20%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 33%, hsla(120, 100%, 20%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 69%, hsla(180, 100%, 20%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 68%, hsla(240, 100%, 20%, 1) 0px, transparent 50%),
+    radial-gradient(at 54% 79%, hsla(300, 100%, 20%, 1) 0px, transparent 50%),
+    radial-gradient(at 82% 9%, hsla(360, 100%, 20%, 1) 0px, transparent 50%);
+
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
