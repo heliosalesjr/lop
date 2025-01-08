@@ -5,8 +5,13 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'upload.wikimedia.org',
-        pathname: '/wikipedia/commons/**',
+        pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'commons.wikimedia.org',
+        pathname: '/**',
+      }
     ],
   },
 }
