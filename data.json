@@ -1,37 +1,37 @@
 [
     {
-        "name": "Alice Johnson",
-        "role": "Software Engineer",
-        "quote": "Code is like humor. When you have to explain it, it’s bad.",
-        "link": "https://example.com/alice",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/1/11/Marks_3820618400_6e7b86c40f_o.jpg"
+        "name": "Tim Cook",
+        "role": "Chief Executive Officer of Apple Inc.",
+        "quote": "Being gay is one of the greatest gifts God has given me.",
+        "link": "https://en.wikipedia.org/wiki/Tim_Cook",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Visit_of_Tim_Cook_to_the_European_Commission_-_P061904-946789.jpg/800px-Visit_of_Tim_Cook_to_the_European_Commission_-_P061904-946789.jpg"
     },
     {
-        "name": "Bob Smith",
-        "role": "Product Manager",
-        "quote": "The best way to predict the future is to invent it.",
-        "link": "https://example.com/bob",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Ada_Byron_daguerreotype_by_Antoine_Claudet_1843_or_1850_-_cropped_%28cropped%29.png"
+        "name": "Elliot Page",
+        "role": "Actor and Producer; Co-founder of Transgender Media",
+        "quote": "I’m trans, my name is Elliot, and my pronouns are he/they.",
+        "link": "https://en.wikipedia.org/wiki/Elliot_Page",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Elliot_Page_8126099_%28cropped%29.jpg/800px-Elliot_Page_8126099_%28cropped%29.jpg"
     },
     {
-        "name": "Carol White",
-        "role": "UX Designer",
-        "quote": "Design is not just what it looks like and feels like. Design is how it works.",
-        "link": "https://example.com/carol",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dickens_Gurney_head.jpg/800px-Dickens_Gurney_head.jpg"
+        "name": "Lydia X. Z. Brown",
+        "role": "Tech Consultant and Activist",
+        "quote": "We deserve all the rights, all the time.",
+        "link": "https://en.wikipedia.org/wiki/Lydia_X._Z._Brown",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Lydia_Brown_at_Colorado_Trust_%28cropped%29.jpg"
     },
     {
-        "name": "David Brown",
-        "role": "Data Scientist",
-        "quote": "In God we trust, all others must bring data.",
-        "link": "https://example.com/david",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/d/de/Sam-weller-kyd.jpeg"
+        "name": "Lynn Conway",
+        "role": "Computing Pioneer and Trans Advocate",
+        "quote": "Never underestimate the power of one person to change the world.",
+        "link": "https://en.wikipedia.org/wiki/Lynn_Conway",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/5/50/Lynn_Conway_July_2006.jpg"
     },
     {
-        "name": "Eve Davis",
-        "role": "DevOps Engineer",
-        "quote": "Automation is good, so long as you know exactly where to put the machine.",
-        "link": "https://example.com/eve",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Moana_wedding.jpg"
+        "name": "Megan Smith",
+        "role": "Former U.S. CTO; CEO of Shift7",
+        "quote": "Diversity and inclusion are keys to innovation.",
+        "link": "https://en.wikipedia.org/wiki/Megan_Smith",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Megan_Smith_official_portrait.jpg/800px-Megan_Smith_official_portrait.jpg"
     }
 ]
