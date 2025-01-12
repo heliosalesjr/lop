@@ -65,10 +65,9 @@ export default function Home() {
           </Button>
         </div>
       </main>
-      <footer className="h-[10vh] flex items-center justify-center">
-        <p className="text-lg text-center">
-          This project showcases inspiring quotes with a modern, vibrant design.
-          Stay tuned for more features!
+      <footer className="h-[5vh] flex items-center justify-center">
+        <p className="text-center">
+          This project highlights inspiring quotes and provides information about LGBTQIA+ pioneers in tech, aiming to inspire and celebrate diversity in the industry.
         </p>
       </footer>
     </div>
