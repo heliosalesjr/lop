@@ -33,5 +33,110 @@
         "quote": "Diversity and inclusion are keys to innovation.",
         "link": "https://en.wikipedia.org/wiki/Megan_Smith",
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Megan_Smith_official_portrait.jpg/800px-Megan_Smith_official_portrait.jpg"
+    },
+    {
+        "name": "Megan Smith",
+        "role": "Former U.S. CTO; CEO of Shift7",
+        "quote": "Diversity and inclusion are keys to innovation.",
+        "link": "https://en.wikipedia.org/wiki/Megan_Smith",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Megan_Smith_official_portrait.jpg/800px-Megan_Smith_official_portrait.jpg"
+    },
+    {
+        "name": "Coraline Ada Ehmke",
+        "role": "Software Developer; Creator of the Contributor Covenant",
+        "quote": "Ethics and social justice are as important as the code itself.",
+        "link": "https://en.wikipedia.org/wiki/Coraline_Ada_Ehmke",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/a/af/Coraline_Ada_Ehmke.jpg"
+    },
+    {
+        "name": "Kara Swisher",
+        "role": "Tech Journalist and Co-founder of Recode",
+        "quote": "There’s nothing wrong with being gay, and there’s nothing wrong with being a journalist who’s gay.",
+        "link": "https://en.wikipedia.org/wiki/Kara_Swisher",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kara_Swisher_crop.jpg/800px-Kara_Swisher_crop.jpg"
+    },
+    {
+        "name": "Chelsea Manning",
+        "role": "Whistleblower and Trans Rights Activist",
+        "quote": "I believe we have more power than we think we do.",
+        "link": "https://en.wikipedia.org/wiki/Chelsea_Manning",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chelsea_Manning_2022.jpg/800px-Chelsea_Manning_2022.jpg"
+    },
+    {
+        "name": "Chris Hughes",
+        "role": "Co-founder of Facebook",
+        "quote": "I’m gay, and I’m an entrepreneur.",
+        "link": "https://en.wikipedia.org/wiki/Chris_Hughes",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Chris_Hughes_%28cropped%29.jpg"
+    },
+    {
+        "name": "Aydian Dowling",
+        "role": "Entrepreneur and Trans Advocate",
+        "quote": "I’m humble enough to know I’m far from finished.",
+        "link": "https://en.wikipedia.org/wiki/Aydian_Dowling",
+        "photo": ""
+    },
+    {
+        "name": "Alan Turing",
+        "role": "British mathematician and logician, considered the father of theoretical computer science and artificial intelligence.",
+        "quote": "We can only see a short distance ahead, but we can see plenty there that needs to be done.",
+        "link": "https://en.wikipedia.org/wiki/Alan_Turing",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/4/40/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University_%28cropped%29.jpg"
+    },
+    {
+        "name": "",
+        "role": "",
+        "quote": "",
+        "link": "",
+        "photo": ""
+    },
+    {
+        "name": "",
+        "role": "",
+        "quote": "",
+        "link": "",
+        "photo": ""
+    },
+    {
+        "name": "",
+        "role": "",
+        "quote": "",
+        "link": "",
+        "photo": ""
+    },
+    {
+        "name": "",
+        "role": "",
+        "quote": "",
+        "link": "",
+        "photo": ""
+    },
+    {
+        "name": "",
+        "role": "",
+        "quote": "",
+        "link": "",
+        "photo": ""
+    },
+    {
+        "name": "",
+        "role": "",
+        "quote": "",
+        "link": "",
+        "photo": ""
+    },
+    {
+        "name": "",
+        "role": "",
+        "quote": "",
+        "link": "",
+        "photo": ""
+    },
+    {
+        "name": "",
+        "role": "",
+        "quote": "",
+        "link": "",
+        "photo": ""
     }
 ]
