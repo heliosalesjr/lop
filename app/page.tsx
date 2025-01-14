@@ -31,20 +31,28 @@ export default function Home() {
           </div>
           <Card className="w-full max-w-lg mb-4">
             <CardContent className="p-6">
-              <div className="flex items-center">
-                <div className="flex-grow">
-                  <div className="flex items-center">
-                    <p className="text-3xl md:text-4xl font-playfair bg-gradient-to-r from-purple-400 to-pink-500 dark:from-purple-300 dark:to-pink-400 bg-clip-text text-transparent">
-                      {currentQuote.name}
-                    </p>
-                    <a href={currentQuote.link} target="_blank" rel="noopener noreferrer" className="ml-2">
+            <div className="flex items-center">
+              <div className="flex-grow">
+                <div className="flex items-center">
+                  <p className="text-3xl md:text-4xl font-playfair bg-gradient-to-r from-purple-400 to-pink-500 dark:from-purple-300 dark:to-pink-400 bg-clip-text text-transparent">
+                    {currentQuote.name}
+                  </p>
+                  {currentQuote.link && (
+                    <a
+                      href={currentQuote.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-2"
+                    >
                       <ExternalLink className="w-6 h-6 text-gray-400 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-100" />
                     </a>
-                  </div>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                    {currentQuote.role}
-                  </p>
+                  )}
                 </div>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                  {currentQuote.role}
+                </p>
+              </div>
+              {currentQuote.photo && (
                 <div className="flex-shrink-0 ml-6">
                   <Image
                     src={currentQuote.photo}
@@ -54,7 +62,9 @@ export default function Home() {
                     className="rounded-full ring-2 ring-purple-400 dark:ring-purple-300"
                   />
                 </div>
-              </div>
+              )}
+            </div>
+
             </CardContent>
           </Card>
           <Button 
