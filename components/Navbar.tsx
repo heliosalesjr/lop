@@ -5,6 +5,8 @@ import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 import { Moon, Sun, Github } from 'lucide-react'
 import { useDialog } from '@/contexts/DialogContext'
+import { signIn } from '@/app/auth'
+import { login } from '@/lib/actions/auth'
 
 export function Navbar() {
   const { theme, setTheme } = useTheme()
@@ -40,6 +42,12 @@ export function Navbar() {
               <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
             </Button>
+            <button
+              onClick={() => login()}
+            >
+              Sign In
+            
+            </button>
           </div>
         </div>
       </div>
