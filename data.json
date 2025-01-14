@@ -21,11 +21,11 @@
         "photo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Lydia_Brown_at_Colorado_Trust_%28cropped%29.jpg"
     },
     {
-        "name": "Lynn Conway",
-        "role": "Computing Pioneer and Trans Advocate",
-        "quote": "Never underestimate the power of one person to change the world.",
-        "link": "https://en.wikipedia.org/wiki/Lynn_Conway",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/5/50/Lynn_Conway_July_2006.jpg"
+        "name": "Sophie Wilson",
+        "role": "computer scientist",
+        "quote": "I think it's important to be open about who you are.",
+        "link": "https://en.wikipedia.org/wiki/Sophie_Wilson",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Sophie_Wilson.jpg"
     },
     {
         "name": "Megan Smith",
@@ -35,11 +35,11 @@
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Megan_Smith_official_portrait.jpg/800px-Megan_Smith_official_portrait.jpg"
     },
     {
-        "name": "Megan Smith",
-        "role": "Former U.S. CTO; CEO of Shift7",
-        "quote": "Diversity and inclusion are keys to innovation.",
-        "link": "https://en.wikipedia.org/wiki/Megan_Smith",
-        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Megan_Smith_official_portrait.jpg/800px-Megan_Smith_official_portrait.jpg"
+        "name": "Edith Windsor",
+        "role": "Computer programmer and engineer at IBM",
+        "quote": "Marriage is a magic word; it has magic throughout the world. It has to do with our dignity as human beings, to be who we are openly.",
+        "link": "https://en.wikipedia.org/wiki/Edith_Windsor",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Edie_Windsor_DC_Pride_2017.jpg/1280px-Edie_Windsor_DC_Pride_2017.jpg"
     },
     {
         "name": "Coraline Ada Ehmke",
@@ -84,59 +84,59 @@
         "photo": "https://upload.wikimedia.org/wikipedia/commons/4/40/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University_%28cropped%29.jpg"
     },
     {
-        "name": "",
-        "role": "",
-        "quote": "",
+        "name": "Jon maddog Hall",
+        "role": "Board chair for the Linux Professional Institute",
+        "quote": "I am who I am, and I am proud of who I am.",
+        "link": "https://en.wikipedia.org/wiki/Jon_Hall_(programmer)",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/2015-03-19_Jon_Hall_by_Olaf_Kosinsky-4.jpg/1024px-2015-03-19_Jon_Hall_by_Olaf_Kosinsky-4.jpg"
+    },
+    {
+        "name": "Leanne Pittsford",
+        "role": "Founder of Lesbians Who Tech",
+        "quote": "We have to create the spaces we want to see in the world.",
+        "link": "https://en.wikipedia.org/wiki/Leanne_Pittsford",
+        "photo": ""
+    },
+    {
+        "name": "Bruce Bastian",
+        "role": "Co-creator of WordPerfect",
+        "quote": "I realized that being true to myself was more important than conforming to someone else's idea of who I should be.",
+        "link": "https://en.wikipedia.org/wiki/Bruce_Bastian",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Bruce_Bastian.jpg/800px-Bruce_Bastian.jpg"
+    },
+    {
+        "name": "Audrey Tang",
+        "role": "Digital Minister of Taiwan",
+        "quote": "In the digital age, democracy can be more than just voting; it can be a conversation.",
+        "link": "https://en.wikipedia.org/wiki/Audrey_Tang",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Audrey_tang_089_%2825378300354%29_%28cropped%29.jpg/800px-Audrey_tang_089_%2825378300354%29_%28cropped%29.jpg"
+    },
+    {
+        "name": "Angelica Ross",
+        "role": "Founder and CEO of TransTech Social Enterprises",
+        "quote": "I believe that telling our stories, first to ourselves and then to one another and the world, is a revolutionary act.",
+        "link": "https://en.wikipedia.org/wiki/Angelica_Ross",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Angelica_Ross_profile.jpg/800px-Angelica_Ross_profile.jpg"
+    },
+    {
+        "name": "Charlie Sprinkman",
+        "role": "Creator of the Everywhere Is Queer app",
+        "quote": "I wanted to create a resource that makes it easier for queer people to find and support each other.",
         "link": "",
         "photo": ""
     },
     {
-        "name": "",
-        "role": "",
-        "quote": "",
-        "link": "",
+        "name": "Ann Mei Chang",
+        "role": "CEO of Candid; former Chief Innovation Officer at USAID",
+        "quote": "Innovation is not about solo genius; it's about collective genius.",
+        "link": "https://en.wikipedia.org/wiki/Ann_Mei_Chang",
         "photo": ""
     },
     {
-        "name": "",
-        "role": "",
-        "quote": "",
-        "link": "",
-        "photo": ""
-    },
-    {
-        "name": "",
-        "role": "",
-        "quote": "",
-        "link": "",
-        "photo": ""
-    },
-    {
-        "name": "",
-        "role": "",
-        "quote": "",
-        "link": "",
-        "photo": ""
-    },
-    {
-        "name": "",
-        "role": "",
-        "quote": "",
-        "link": "",
-        "photo": ""
-    },
-    {
-        "name": "",
-        "role": "",
-        "quote": "",
-        "link": "",
-        "photo": ""
-    },
-    {
-        "name": "",
-        "role": "",
-        "quote": "",
-        "link": "",
-        "photo": ""
+        "name": "Martine Rothblatt",
+        "role": "Creator of SiriusXM Satellite Radio.",
+        "quote": "The greatest thing we can engineer is a positive attitude.",
+        "link": "https://en.wikipedia.org/wiki/Martine_Rothblatt",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Martine_Rothblatt_Mar24_%28cropped%29.jpg/800px-Martine_Rothblatt_Mar24_%28cropped%29.jpg"
     }
 ]
