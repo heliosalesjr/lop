@@ -11,6 +11,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'commons.wikimedia.org',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+        pathname: '**',
       }
     ],
   },

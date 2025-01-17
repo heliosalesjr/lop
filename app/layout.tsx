@@ -35,16 +35,16 @@ export default function RootLayout({
         className={`${roboto.variable} ${playfair.variable} font-sans antialiased animated-background`}
       >
         <Providers>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          <MorphingDialog />
-          {children}
-        </ThemeProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+              <MorphingDialog />
+            {children}
+          </ThemeProvider>
         </Providers>
       </body>
     </html>
