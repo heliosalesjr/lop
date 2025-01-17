@@ -1,19 +1,17 @@
-'use client'
+import React, { createContext, useContext, useState, useRef } from 'react';
 
-import React, { createContext, useState, useContext, useRef } from 'react';
-
-type DialogContextType = {
+interface DialogContextType {
   isDialogOpen: boolean;
   openDialog: () => void;
   closeDialog: () => void;
-  triggerRef: React.RefObject<HTMLDivElement | null>
-};
+  triggerRef: React.RefObject<HTMLDivElement | null>;
+}
 
 const DialogContext = createContext<DialogContextType | undefined>(undefined);
 
 export function DialogProvider({ children }: { children: React.ReactNode }) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const triggerRef = useRef<HTMLDivElement>(null!); // Usado `null!`
+  const triggerRef = useRef<HTMLDivElement | null>(null);
 
   const openDialog = () => setIsDialogOpen(true);
   const closeDialog = () => setIsDialogOpen(false);
@@ -32,3 +30,4 @@ export function useDialog() {
   }
   return context;
 }
+
