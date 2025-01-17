@@ -6,7 +6,7 @@ type DialogContextType = {
   isDialogOpen: boolean;
   openDialog: () => void;
   closeDialog: () => void;
-  triggerRef: React.RefObject<HTMLDivElement>; // Removido `| null`
+  triggerRef: React.RefObject<HTMLDivElement | null>
 };
 
 const DialogContext = createContext<DialogContextType | undefined>(undefined);
