@@ -4,9 +4,10 @@ import { Navbar } from '@/components/Navbar'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import './globals.css'
 import '../styles/background.css'
-import { Providers } from './providers'
+//import { Providers } from './providers'
 
 import { MorphingDialog } from '@/components/MorphingDialog'
+import { DialogProvider } from '@/contexts/DialogContext'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -34,7 +35,8 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${playfair.variable} font-sans antialiased animated-background`}
       >
-        <Providers>
+        
+          <DialogProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -45,7 +47,8 @@ export default function RootLayout({
               <MorphingDialog />
             {children}
           </ThemeProvider>
-        </Providers>
+          </DialogProvider>
+        
       </body>
     </html>
   )
