@@ -3,10 +3,12 @@
 import React, { createContext, useState, useContext } from 'react'
 
 type DialogContextType = {
-  isDialogOpen: boolean
-  openDialog: () => void
-  closeDialog: () => void
-}
+  isDialogOpen: boolean;
+  openDialog: () => void;
+  closeDialog: () => void;
+  triggerRef: React.RefObject<HTMLDivElement | null>; // Adicionado aqui
+};
+
 
 const DialogContext = createContext<DialogContextType | undefined>(undefined)
 
