@@ -7,7 +7,7 @@ import { useDialog } from '@/contexts/DialogContext'
 import { X } from 'lucide-react'
 
 export function MorphingDialog() {
-  const { isDialogOpen, closeDialog } = useDialog()
+  const { isDialogOpen, closeDialog, triggerRef } = useDialog();
 
   return (
     <AnimatePresence>
@@ -21,6 +21,7 @@ export function MorphingDialog() {
           onClick={closeDialog}
         >
           <motion.div
+            ref={triggerRef} // Utilizando o triggerRef aqui
             className="bg-white dark:bg-gray-800 rounded-lg p-12 max-w-2xl w-full mx-4 relative"
             onClick={(e) => e.stopPropagation()}
           >
