@@ -3,6 +3,7 @@
 import QuoteDisplay from '@/components/QuoteDisplay'
 import LGBTQNews from '@/components/LGBTQNews'
 import Footer from '@/components/Footer'
+import LGBTQArtists from '@/components/LGBTQArtists'
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      
+      <LGBTQArtists />
       {/* Footer sempre no final */}
       <Footer />
     </div>
