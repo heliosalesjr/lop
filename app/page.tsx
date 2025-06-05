@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { getRandomQuote, Quote } from '@/utils/quoteUtils'
 import { ExternalLink } from 'lucide-react'
+import LGBTQNews from '@/components/LGBTQNews'
 
 export default function Home() {
   const [currentQuote, setCurrentQuote] = useState<Quote | null>(null)
@@ -75,6 +76,7 @@ export default function Home() {
           </Button>
         </div>
       </main>
+      <LGBTQNews />
       <footer className="h-[5vh] flex items-center justify-center">
         <p className="text-center">
           This project highlights inspiring quotes and provides information about LGBTQIA+ pioneers in tech, aiming to inspire and celebrate diversity in the industry.
