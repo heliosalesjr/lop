@@ -13,12 +13,12 @@ export default function Home() {
           {/* Layout responsivo: lado a lado em telas grandes, empilhado em telas pequenas */}
           <div className="flex flex-col lg:flex-row h-full gap-6">
             {/* QuoteDisplay - metade da largura em telas grandes */}
-            <div className="flex-1 min-h-[70vh] lg:min-h-full">
+            <div className="flex-1 min-h-[70vh] lg:min-h-full flex items-center justify-center">
               <QuoteDisplay />
             </div>
             
             {/* LGBTQNews - metade da largura em telas grandes */}
-            <div className="flex-1 min-h-[70vh] lg:min-h-full">
+            <div className="flex-1 min-h-[70vh] lg:min-h-full flex items-center justify-center">
               <LGBTQNews />
             </div>
           </div>

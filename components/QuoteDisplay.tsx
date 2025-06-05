@@ -21,14 +21,14 @@ export default function QuoteDisplay() {
   if (!currentQuote) return null
 
   return (
-    <div className="flex flex-col justify-center items-center text-center h-full p-4">
-      <div className="flex flex-col items-center justify-between h-full max-w-4xl w-full mx-auto">
-        <div className="mb-8 flex-grow flex items-center justify-center">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-thin leading-tight font-roboto px-4">
+    <div className="flex flex-col justify-center items-center text-center p-4 w-full">
+      <div className="flex flex-col items-center justify-center max-w-4xl w-full mx-auto space-y-6">
+        <div className="flex items-center justify-center">
+          <p className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-thin leading-tight font-roboto px-4">
             "{currentQuote.quote}"
           </p>
         </div>
-        <Card className="w-full max-w-lg mb-4">
+        <Card className="w-full max-w-lg">
           <CardContent className="p-6">
             <div className="flex items-center">
               <div className="flex-grow">

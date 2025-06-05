@@ -156,16 +156,16 @@ const LGBTQNews: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white/30 rounded-lg shadow-lg">
+    <div className="max-w-4xl mx-auto p-6 mt-4 bg-white/30 dark:bg-gray-800/30 rounded-lg shadow-lg">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 flex items-center gap-2">
           <span className="text-2xl">🏳️‍🌈</span>
           LGBTQ+ News
         </h2>
         <button
           onClick={handleRefresh}
           disabled={loading}
-          className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:opacity-50 transition-colors"
+          className="flex items-center gap-2 px-4 py-2 bg-purple-600 dark:bg-purple-700 text-white rounded-lg hover:bg-purple-700 dark:hover:bg-purple-800 disabled:opacity-50 transition-colors"
         >
           <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
           Refresh
@@ -173,9 +173,9 @@ const LGBTQNews: React.FC = () => {
       </div>
 
       {error && (
-        <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
-          <p className="text-red-700">{error}</p>
-          <p className="text-sm text-red-600 mt-1">Showing sample news.</p>
+        <div className="mb-4 p-4 bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 rounded-lg">
+          <p className="text-red-700 dark:text-red-300">{error}</p>
+          <p className="text-sm text-red-600 dark:text-red-400 mt-1">Showing sample news.</p>
         </div>
       )}
 
@@ -183,12 +183,12 @@ const LGBTQNews: React.FC = () => {
         <div className="space-y-4">
           {[1, 2, 3].map((i) => (
             <div key={i} className="animate-pulse">
-              <div className="flex gap-4 p-4 border border-gray-200 rounded-lg">
-                <div className="w-24 h-20 bg-gray-300 rounded"></div>
+              <div className="flex gap-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                <div className="w-24 h-20 bg-gray-300 dark:bg-gray-600 rounded"></div>
                 <div className="flex-1 space-y-2">
-                  <div className="h-4 bg-gray-300 rounded w-3/4"></div>
-                  <div className="h-3 bg-gray-300 rounded w-full"></div>
-                  <div className="h-3 bg-gray-300 rounded w-1/2"></div>
+                  <div className="h-4 bg-gray-300 dark:bg-gray-600 rounded w-3/4"></div>
+                  <div className="h-3 bg-gray-300 dark:bg-gray-600 rounded w-full"></div>
+                  <div className="h-3 bg-gray-300 dark:bg-gray-600 rounded w-1/2"></div>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@ const LGBTQNews: React.FC = () => {
           {articles.map((article, index) => (
             <article
               key={index}
-              className="flex gap-4 p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow group"
+              className="flex gap-4 p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-md dark:hover:shadow-gray-900/20 transition-shadow group bg-white/50 dark:bg-gray-800/50"
             >
               {article.urlToImage && (
                 <div className="flex-shrink-0">
@@ -215,15 +215,15 @@ const LGBTQNews: React.FC = () => {
               )}
               
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
                   {article.title}
                 </h3>
                 
-                <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-3 line-clamp-2">
                   {article.description}
                 </p>
                 
-                <div className="flex items-center justify-between text-xs text-gray-500">
+                <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
                   <div className="flex items-center gap-4">
                     <span className="flex items-center gap-1">
                       <Calendar className="w-3 h-3" />
@@ -236,7 +236,7 @@ const LGBTQNews: React.FC = () => {
                     href={article.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-purple-600 hover:text-purple-800 transition-colors"
+                    className="flex items-center gap-1 text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 transition-colors"
                   >
                     <span>Read more</span>
                     <ExternalLink className="w-3 h-3" />
@@ -249,7 +249,7 @@ const LGBTQNews: React.FC = () => {
       )}
 
       {articles.length === 0 && !loading && (
-        <div className="text-center py-8 text-gray-500">
+        <div className="text-center py-8 text-gray-500 dark:text-gray-400">
           <p>No news found at the moment.</p>
         </div>
       )}
