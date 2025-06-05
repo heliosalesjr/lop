@@ -17,124 +17,60 @@ const LGBTQNews: React.FC = () => {
 
   // Função para buscar notícias usando News API
   const fetchNews = async () => {
-    setLoading(true);
-    setError(null);
+  setLoading(true);
+  setError(null);
+  
+  try {
+    // Agora chama sua própria API route ao invés da News API diretamente
+    const response = await fetch('/api/lgbtq-news');
     
-    try {
-      const API_KEY = process.env.NEXT_PUBLIC_NEWS_API_KEY;
-      
-      if (!API_KEY) {
-        throw new Error('API Key not configured');
-      }
-
-      // Optimized query to capture relevant LGBTQ+ news in English
-      // Using operators to search for specific terms
-      const queries = [
-        'LGBTQ+ OR LGBT OR "LGBT community"',
-        '"LGBT rights" OR "LGBTQ rights" OR "gay rights"',
-        '"gay pride" OR "pride parade" OR "pride month"',
-        'transgender OR "trans rights" OR "gender identity"',
-        '"same-sex marriage" OR "marriage equality"',
-        'homophobia OR transphobia OR "LGBT discrimination"',
-        '"sexual diversity" OR "gender diversity"',
-        '"coming out" OR "LGBT activism"'
-      ];
-
-      // Makes multiple searches to get variety of news
-      const allArticles: NewsArticle[] = [];
-      
-      for (let i = 0; i < Math.min(queries.length, 3); i++) {
-        const query = queries[i];
-        const url = `https://newsapi.org/v2/everything?` +
-          `q=${encodeURIComponent(query)}&` +
-          `language=en&` +
-          `sortBy=publishedAt&` +
-          `pageSize=5&` +
-          `from=${new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()}&` + // Last 7 days
-          `apiKey=${API_KEY}`;
-        
-        try {
-          const response = await fetch(url);
-          if (response.ok) {
-            const data = await response.json();
-            if (data.status === 'ok' && data.articles) {
-              // Filter valid articles and add to list
-              const validArticles = data.articles
-                .filter((article: any) => 
-                  article.title && 
-                  article.description && 
-                  article.url &&
-                  article.title !== '[Removed]' &&
-                  article.description !== '[Removed]'
-                )
-                .map((article: any) => ({
-                  title: article.title,
-                  description: article.description,
-                  url: article.url,
-                  publishedAt: article.publishedAt,
-                  source: article.source?.name || 'Unknown source',
-                  urlToImage: article.urlToImage
-                }));
-              
-              allArticles.push(...validArticles);
-            }
-          }
-        } catch (queryError) {
-          console.warn(`Error in query "${query}":`, queryError);
-        }
-      }
-
-      if (allArticles.length > 0) {
-        // Remove duplicates based on title
-        const uniqueArticles = allArticles.filter((article, index, self) =>
-          index === self.findIndex(a => a.title === article.title)
-        );
-        
-        // Sort by date and get the 3 most recent
-        const sortedArticles = uniqueArticles
-          .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-          .slice(0, 3);
-        
-        setArticles(sortedArticles);
-      } else {
-        throw new Error('No news found');
-      }
-      
-    } catch (err) {
-      console.error('Error fetching news:', err);
-      setError('Unable to load news');
-      
-      // Fallback with mock data for demonstration
-      setArticles([
-        {
-          title: "Pride Month 2024 Sees Record-Breaking Global Participation",
-          description: "Cities worldwide celebrate with unprecedented attendance at Pride events, highlighting growing acceptance and support for LGBTQ+ rights.",
-          url: "#",
-          publishedAt: "2024-06-03T10:00:00Z",
-          source: "LGBT+ Today",
-          urlToImage: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=200&fit=crop"
-        },
-        {
-          title: "New Workplace Anti-Discrimination Laws Passed",
-          description: "Historic legislation ensures protection for LGBTQ+ employees, establishing penalties for companies that discriminate based on sexual orientation or gender identity.",
-          url: "#",
-          publishedAt: "2024-06-02T14:30:00Z",
-          source: "Rights Today",
-          urlToImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=200&fit=crop"
-        },
-        {
-          title: "Same-Sex Marriages Increase 45% Globally",
-          description: "New statistics show significant growth in officially registered same-sex unions, reflecting changing attitudes toward marriage equality.",
-          url: "#",
-          publishedAt: "2024-06-01T09:15:00Z",
-          source: "Global Statistics",
-          urlToImage: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=200&fit=crop"
-        }
-      ]);
-    } finally {
-      setLoading(false);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
-  };
+    
+    const data = await response.json();
+    
+    if (data.articles && data.articles.length > 0) {
+      setArticles(data.articles);
+    } else {
+      throw new Error('No news found');
+    }
+    
+  } catch (err) {
+    console.error('Error fetching news:', err);
+    setError('Unable to load news');
+    
+    // Mantém o mesmo fallback que você já tinha
+    setArticles([
+      {
+        title: "Pride Month 2024 Sees Record-Breaking Global Participation",
+        description: "Cities worldwide celebrate with unprecedented attendance at Pride events, highlighting growing acceptance and support for LGBTQ+ rights.",
+        url: "#",
+        publishedAt: "2024-06-03T10:00:00Z",
+        source: "LGBT+ Today",
+        urlToImage: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=200&fit=crop"
+      },
+      {
+        title: "New Workplace Anti-Discrimination Laws Passed",
+        description: "Historic legislation ensures protection for LGBTQ+ employees, establishing penalties for companies that discriminate based on sexual orientation or gender identity.",
+        url: "#",
+        publishedAt: "2024-06-02T14:30:00Z",
+        source: "Rights Today",
+        urlToImage: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=200&fit=crop"
+      },
+      {
+        title: "Same-Sex Marriages Increase 45% Globally",
+        description: "New statistics show significant growth in officially registered same-sex unions, reflecting changing attitudes toward marriage equality.",
+        url: "#",
+        publishedAt: "2024-06-01T09:15:00Z",
+        source: "Global Statistics",
+        urlToImage: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&h=200&fit=crop"
+      }
+    ]);
+  } finally {
+    setLoading(false);
+  }
+};
 
   useEffect(() => {
     fetchNews();
